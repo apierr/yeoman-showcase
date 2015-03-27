@@ -2,19 +2,12 @@
  /*jshint unused: vars */
     define([
         'angular',
-        'route'
-    ], function (angular, route){
+        'route',
+        'directives/stateful.directive'
+    ], function (angular, route, statefulDirective){
         'use strict';
 
-        /**
-        * @ngdoc overview
-        * @name yeomanShowcaseApp
-        * @description
-        * # yeomanShowcaseApp
-        *
-        * Main module of the application.
-        */
-        return angular
+        var app = angular
             .module('yeomanShowcaseApp', [
                 'ngCookies',
                 'ngResource',
@@ -22,8 +15,12 @@
                 'ngRoute',
                 'ngAnimate',
                 'ngTouch'
-            ])
-        .config(route);
+            ]);
+
+        app.config(route);
+        app.directive('nsStateful', statefulDirective);
+
+        return app;
     });   
 })(this.define);
 
