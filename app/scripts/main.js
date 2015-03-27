@@ -60,7 +60,7 @@ require([
   'angular-resource',
   'angular-animate',
   'angular-touch'
-], function(angular, app, ngRoutes, ngCookies, ngSanitize, ngResource, ngAnimate, ngTouch) {
+], function(angular, app) {
   'use strict';
   /* jshint ignore:start */
   var $html = angular.element(document.getElementsByTagName('html')[0]);
