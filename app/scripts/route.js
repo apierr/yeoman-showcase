@@ -1,13 +1,11 @@
 (function (define) {
     define([
-        'controllers/main',
         'controllers/password.controller'
-    ], function (mainController, passwordController) {
+    ], function (passwordController) {
         return function ($routeProvider) {
             $routeProvider
             .when('/', {
-                templateUrl: 'views/main.html',
-                controller: mainController
+                templateUrl: 'views/main.html'
             })
             .when('/about', {
                 templateUrl: 'views/about.html',

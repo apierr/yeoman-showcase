@@ -2,8 +2,7 @@
  /*jshint unused: vars */
     define([
         'angular',
-        'route',
-        'controllers/main'
+        'route'
     ], function (angular, route){
         'use strict';
 
