@@ -1,15 +1,17 @@
 (function (define) {
     define([
-    ], function () {
+        'controllers/main',
+        'controllers/password.controller'
+    ], function (mainController, passwordController) {
         return function ($routeProvider) {
             $routeProvider
             .when('/', {
                 templateUrl: 'views/main.html',
-                controller: 'MainCtrl'
+                controller: mainController
             })
             .when('/about', {
                 templateUrl: 'views/about.html',
-                controller: 'AboutCtrl'
+                controller: passwordController
             })
             .otherwise({
                 redirectTo: '/'

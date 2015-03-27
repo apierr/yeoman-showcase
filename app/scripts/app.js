@@ -3,9 +3,8 @@
     define([
         'angular',
         'route',
-        'controllers/main', 
-        'controllers/about'
-    ], function (angular, route, MainCtrl, AboutCtrl)/*invoke*/ {
+        'controllers/main'
+    ], function (angular, route){
         'use strict';
 
         /**
@@ -18,8 +17,6 @@
         */
         return angular
             .module('yeomanShowcaseApp', [
-                'yeomanShowcaseApp.controllers.MainCtrl',
-                'yeomanShowcaseApp.controllers.AboutCtrl',
                 'ngCookies',
                 'ngResource',
                 'ngSanitize',
